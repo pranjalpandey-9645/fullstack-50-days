@@ -1,0 +1,35 @@
+.hero-bar-container h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-bar {
+    margin: 20px;
+    padding: 10px;
+}
+
+.home{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+/*body {
+ /* background-image: url('gradient.jpg'); /* Path to your image */
+ /* background-repeat: no-repeat;          /* Prevents image from tiling */
+ /* background-size: cover;                /* Scales image to cover the area */
+ /* background-position: center;           /* Centers the image */
+ /* background-attachment: fixed;          /* Keeps image static while scrolling (optional) */
+/*}
+

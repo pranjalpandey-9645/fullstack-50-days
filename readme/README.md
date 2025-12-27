@@ -13,3 +13,8 @@ A **24-day full-stack web development journey** focused on building real, freela
 - Use Semantic tags of HTML.
 - And Use CSS integration.
 - Structured Semantic HTML tags and layout.
+
+# 🔥 Day 3: Introduce a Consistent Layout System
+
+
+

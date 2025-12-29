@@ -12,6 +12,7 @@
     background-color: #f8f9fa;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
+    box-shadow: -15px 13px 6px rgba(215, 190, 190, 0.712);
     padding: 1rem;
     margin: 1rem;
     display: flex;
@@ -19,14 +20,6 @@
     position: relative;
     align-items: center;
     justify-content: flex-start;
-}
-
-.card-1{
-       box-shadow: -15px 13px 6px rgba(215, 190, 190, 0.712);
-}
-
-.card-2{
-    box-shadow: -12px 12px 6px rgba(215, 190, 190, 0.712);
 }
 
 /* .image-wrapper{
@@ -66,7 +59,9 @@
     transform: rotateX(4deg) rotateY(-4deg) translateY(-10px);
 }
 
-
+.description{
+    text-align: center;
+}
 
 .capsule {
     text-align: center;
@@ -74,5 +69,6 @@
     border-radius: 0.25rem;
     border: #343a40 2px solid;
     padding: 2px;
+    text-align: center;
     margin: 10px;
 }

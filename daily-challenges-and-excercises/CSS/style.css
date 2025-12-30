@@ -1,0 +1,21 @@
+.conatiner {
+    display: flex;
+    border-radius: 7px;
+    justify-content: center;
+}
+
+.image-cntainer img{
+    border-radius: 7px;
+    margin: 3px;
+    padding: 2px;
+}
+
+.capsule{
+    border-radius: 2px solid black;
+    border-color: black;
+}
+
+.description{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

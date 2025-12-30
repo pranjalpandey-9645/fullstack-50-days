@@ -1,0 +1,31 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    padding: 5px;
+    border: 1px solid white;
+    color: blueviolet;
+}
+
+.title-box {
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    height: 300px;
+    width: 400px;
+}

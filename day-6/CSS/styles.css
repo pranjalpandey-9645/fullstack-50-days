@@ -39,25 +39,33 @@ li a {
 /* Container-box */
 .box-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     background-color: lightgreen;
     border: var(--primary-border);
     border-radius: 8px;
-    padding: 10rem;
-    margin: 2rem 2rem;
+    padding: 8rem;
+    margin: 2rem;
+    gap: 2rem;
 }
 
-.container-1 {
-    background-color: lightcyan;
+.container-1,
+.container-2 {
+    width: 35%; 
+    min-height: 150px;
+    padding: 2rem;
     border: var(--primary-border);
-    padding: 5rem;
-    position: inherit;
-
+    background-color: lightcyan;
+    border-radius: 3px;
+    align-items: center;
 }
+
 
 .content-container {
     display: flex;
     justify-content: center;
+    padding: 5rem;
+    margin: 2rem;
     background-color: var(--tertiary-color);
     border: var(--primary-border);
     border-radius: 12px;

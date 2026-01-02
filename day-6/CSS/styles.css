@@ -52,7 +52,7 @@ li a {
     background-color: lightgreen;
     border: var(--primary-border);
     border-radius: 8px;
-    padding: 2rem;
+    padding: 5rem;
     margin: 2rem;
     gap: 2rem;
 }
@@ -72,14 +72,17 @@ li a {
 .content-container {
     display: flex;
     justify-content: center;
-    padding: 5rem;
+    padding: 2rem;
     margin: 2rem;
     background-color: var(--tertiary-color);
     border: var(--primary-border);
     border-radius: 12px;
-
+    align-items: center;
 }
 
+article{
+    text-align: center;
+}
 
 
 body {

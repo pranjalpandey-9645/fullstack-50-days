@@ -1,23 +1,59 @@
-*{
-    margin:0px;
-    padding:0px;
+/* This is the universal property, which is applied by default by the developer for the web. */
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-:root{
+/* root contains the variable var() that contains the values which are often used in the code. */
+:root {
     --primary-border-color: 2px solid black;
     --Box-color: rgb(238, 130, 238);
 }
 
-.container{
-    display:flexbox;
+.container {
+    display: flex;
+    justify-content: center;
+    /* var is a variable that is used for those values which are used more over in the code. */
     border: var(--primary-border-color);
-    height: 10rem;
-    width: 100rem;
+    /* The unit vh is often used. */
+    height: 50vh;
+    /* This will align the items in the centre in the container. */
+    align-items: center;
+    /* This will give the gap between the items in the container and mostly used in the flexbox. */
+    gap: 10px 10px;
+    /* This will wrap the items to scroll down or up to see the other items. */
+    flex-wrap: wrap;
 }
 
-.item{
+.item {
     border: var(--primary-border-color);
-    height: 10px;
-    width: 10px;
-    
+    height: 10rem;
+    width: 10rem;
+    background-color: blueviolet;
+}
+
+.item-1 {
+    /* This will align the item by self that means a particular item. 
+    But the item will align fro the start of the flexbox. */
+    align-self: flex-start;
+}
+
+.item-2 {
+    /* This will align the items from the end of the flexbox. */
+    align-self: flex-end;
+}
+
+.item-3 {
+    /* This will align the items in centre by itself. */
+    align-self: center;
+}
+
+.item-4 {
+    /* This will align in last according to the baseline of the flexbox. */
+    align-self: last baseline;
+}
+
+.item-5 {
+    /* This will align in first place accroding to the baseline of the flexbox. */
+    align-self: first baseline;
 }

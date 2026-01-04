@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primary-border-color: 2px solid black;
+    --Box-color: rgb(238, 130, 238);
+    --Primary-font-family-: Google Sans Flex, 'Archivo Black', Playfair Display, Lora, PT Serif, serif;
+    --secondary-font-family: 'Archivo Black', Playfair Display, Lora, PT Serif, serif;
+}
+
+nav {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px slategray solid;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    position: sticky;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    display: flex;
+    justify-content: space-around;
+    width: 164px;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    gap: 40px;
+}
+
+.menu ul li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.copied-from-another-tab {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+}
+
+.Containers-to-download h1 {
+    margin: 70px;
+    text-align: center;
+    /* font-family: var(--Primary-font-family-); */
+    font-family: Google Sans flex;
+    font-size: 40px;
+}
+
+.information-container {
+    text-align: center;
+    font-size: 1.6;
+    font-family: Lora;
+    margin: 30px;
+    color: #777171;
+}
+
+.box-container{
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border: var(--primary-border-color);
+    height: 80vh;
+}

@@ -6,9 +6,63 @@
 }
 
 :root {
-    --primary-border-color: 2px solid black;
+    --primary-border-color: 1px solid rgb(138, 133, 133);
     --Primary-font-family-: Google Sans Flex, 'Archivo Black', Playfair Display, Lora, PT Serif, serif;
-    --secondary-font-family: 'Archivo Black', Playfair Display, Lora, PT Serif, serif;
+    --secondary-border-color: 1px solid #000000;
     --primary-color: blueviolet;
     --Box-color: rgb(238, 130, 238);
+}
+
+.container {
+    display: grid;
+    width: 60vw;
+    height: 80vh;
+    border: var(--primary-border-color);
+    justify-items: center;
+    align-items: center;
+    /* grid-template-columns: repeat(3, 80px); */
+    /* grid-template-rows: repeat(40px, 4em, 40px); */
+    /* grid-gap: 10px; */
+    /* grid-template-columns: [pehla] 100px [dusra] 100px [teesra] 100px [chautha] 100px; */
+    /* grid-template-rows: 100px 100px 100px 100px; */
+    grid-template-areas:
+        "first second third fourth fivth"
+        "first second third fourth fivth"
+        "first second third fourth fivth";
+    column-gap: 44px;
+    row-gap: 10px;
+}
+
+.box {
+    border: var(--primary-border-color);
+    height: 55px;
+    width: 75px;
+    background-color: var(--Box-color);
+}
+
+.box-1 {
+    grid-area: 1 / 1 / 2 / 2;
+    grid-column: first/t;
+}
+
+.box-2 {
+    grid-area: 1 / 2 / 2 / 3;
+    grid-column: second/t;
+}
+
+.box-3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-area: 1 / 3 / 2 / 4;
+    grid-column: third/t;
+}
+
+.box-4 {
+    grid-area: 1 / 4 / 3 / 2;
+    grid-column: fourth/t;
+}
+
+.box-5 {
+    grid-area: 2 / 1 / 3 / 2;
+    grid-column: fivth/t;
 }

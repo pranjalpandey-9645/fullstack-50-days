@@ -6,8 +6,8 @@
 }
 
 :root {
-    --primary-border-color: 2px solid black;
-    --Box-color: rgb(238, 130, 238);
+    --primary-border-color: 1px solid rgb(155, 151, 151);
+    --Box-color: rgba(245, 241, 238, 0.511);
     --Primary-font-family: Google Sans Flex, 'Archivo Black', Playfair Display, Lora, PT Serif, serif;
     --secondary-font-family: 'Archivo Black', Playfair Display, Lora, PT Serif, serif;
 }
@@ -72,17 +72,27 @@ nav {
 .box-container {
     display: flex;
     justify-content: center;
+    justify-items: center;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 50px auto;
-    padding: 0 20px;
+    align-items: center;
+    grid-gap: 30px;
+    /* grid-template-columns: [first] 100px [second]100px [third] 100px [fourth] 100px [fivth]100px [sixth]100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px; */
+    grid-template-areas:
+        "first second"
+        "third fourth"
+        "fivth sixth";
+    column-gap: 100px;
+    row-gap: 30px;
 }
 
 .box {
     border: var(--primary-border-color);
-    height: 55px;
-    width: 75px;
+    height: 35vh;
+    width: 40vw;
     background-color: var(--Box-color);
+    border-radius: 8px;
 }
 
 .b-1 {
@@ -110,4 +120,9 @@ nav {
 .b-5 {
     grid-area: 2 / 1 / 3 / 2;
     grid-column: fivth/t;
+}
+
+.b-6 {
+    grid-area: 2 / 2 / 3 / 3;
+    grid-column: sixth/t;
 }

@@ -121,15 +121,16 @@ nav .button {
     padding: 10px 20px;
     cursor: pointer;
 }
- .mid-body-section{
+
+.mid-body-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: left;
     text-align: center;
     margin: 10px;
-    padding: 100px 100px; 
- }
+    padding: 100px 100px;
+}
 
 .black-box {
     background-color: slategrey;
@@ -137,10 +138,11 @@ nav .button {
     height: 150px;
 }
 
-.black-box h3{
+.black-box h3 {
     text-align: center;
     margin: 30px;
 }
+
 @media (max-width: 600px) {
     body {
         background-color: rgb(233, 239, 241);

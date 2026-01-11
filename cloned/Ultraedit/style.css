@@ -43,15 +43,6 @@ ul li {
     cursor: pointer;
 }
 
-nav .button {
-    display: flex;
-    justify-items: right;
-    background-color: #ffd400;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-}
-
 .download-container {
     text-align: center;
     margin-top: 30px;
@@ -141,10 +132,22 @@ nav .button {
     align-items: center;
 }
 
+.white-box h3{
+    text-align: center;
+    margin: 30px;
+    font-size: 24px;
+}
+
+.white-box p {
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+}
+
 .black-box {
     background-color: slategrey;
-    width: 400px;
-    height: 200px;
+    width: 500px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,12 +157,17 @@ nav .button {
 
 .black-box h3 {
     text-align: center;
-    margin: 30px;
+    margin: 10px;
+    font-size: 24px;
 }
 
 .black-box p {
     text-align: center;
-    margin: 30px;
+    font-size: 20px;
+}
+
+.black-box textarea {
+    margin: 20px;
 }
 
 @media (max-width: 600px) {

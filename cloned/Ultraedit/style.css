@@ -123,7 +123,9 @@ nav .button {
 }
 
 .mid-body-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 100px;
     flex-direction: column;
     align-items: center;
     justify-content: left;
@@ -132,13 +134,30 @@ nav .button {
     padding: 100px 100px;
 }
 
+.white-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
 .black-box {
     background-color: slategrey;
-    width: 500px;
-    height: 150px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 10px;
 }
 
 .black-box h3 {
+    text-align: center;
+    margin: 30px;
+}
+
+.black-box p {
     text-align: center;
     margin: 30px;
 }

@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.animation-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 100px;
+    background-color: #26d6bb;
+    animation: box-animation  1s linear infinite;
+}
+
+@keyframes box-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30% {
+        transform: rotate(90deg);
+    }
+
+    60% {
+        transform: rotate(120deg);
+    }
+
+    90% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(240deg);
+    }
+}

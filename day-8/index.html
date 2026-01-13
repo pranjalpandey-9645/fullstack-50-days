@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basic Overview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(133, 133, 196);
+            color: white;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        .button {
+            background-color: cyan;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        The box is jsut a box.
+    </div>
+    <button class="button">Click me</button>
+
+    <script>
+        document.querySelector(".button").addEventListener("click", function () {
+            document.querySelector(".box").style.backgroundColor = "red";
+        });
+        alert("Hello World");
+    </script>
+</body>
+
+</html>

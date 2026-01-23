@@ -1,3 +1,5 @@
+console.log("Day 17 module loaded");
+
 function nice(Ultron) {
     console.log("Hello, " + Ultron + "!");
     console.log("Hello, " + Ultron + " you're nice!");
